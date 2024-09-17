@@ -1,27 +1,19 @@
-# Bt-Panel-v7.7.0
-Bt-Panel-v7.7.0-backup  官方原版v7.7.0版本面板备份
+# 宝塔面板-v7.7.0
 
-**Centos/Ubuntu/Debian安装命令 独立运行环境（py3.7）：**
+#### 第一步：Centos/Ubuntu/Debian安装命令 独立运行环境（py3.7）
 
 ```Bash
 curl -sSO https://raw.githubusercontent.com/ibibicloud/Bt-Panel/master/install/install_panel.sh && bash install_panel.sh
 ```
 
-跳过登录框，以及破解插件等请自行搜索
-
-&nbsp;
-
-**如果遇到重启后宝塔乱码 请DD最新版Debian系统然后修改语言区域：**
-
+#### 第二步： 一键开心脚本 剔除强制登陆 + 开心软件商城 + 文件防修改
 
 ```Bash
-localectl set-locale LANG=en_US.UTF-8
-nano /etc/default/locale
+curl -sSO https://raw.githubusercontent.com/ibibicloud/Bt-Panel/master/one_key_happy.sh && bash one_key_happy.sh
 ```
+
+#### 第三步： 保险优化补丁
 
 ```Bash
-LANG="en_US.UTF-8"
-LC_ALL="en_US.UTF-8"
+wget -O optimize.sh https://raw.githubusercontent.com/ibibicloud/Bt-Panel/master/optimize.sh && bash optimize.sh
 ```
-
-修改后保存文件，重启VPS即可。
