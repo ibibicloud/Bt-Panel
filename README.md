@@ -4,7 +4,7 @@ Bt-Panel-v7.7.0-backup  官方原版v7.7.0版本面板备份
 **Centos/Ubuntu/Debian安装命令 独立运行环境（py3.7）：**
 
 ```Bash
-curl -sSO https://raw.githubusercontent.com/ibibicloud/Bt-Panel/main/install/install_panel.sh && bash install_panel.sh
+curl -sSO https://raw.githubusercontent.com/ibibicloud/Bt-Panel/master/install/install_panel.sh && bash install_panel.sh
 ```
 
 跳过登录框，以及破解插件等请自行搜索
